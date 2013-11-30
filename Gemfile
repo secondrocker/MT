@@ -1,4 +1,4 @@
-source 'https://rubygems.org/'
+source 'http://ruby.taobao.org/'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
@@ -7,7 +7,7 @@ group :test,:development do
   gem 'sqlite3'
 end
 group :production do
-  gem 'pg' ,group: :production
+  gem 'sqlite3'
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
