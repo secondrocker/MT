@@ -1,0 +1,15 @@
+<div ng-controller="PostCtrl">
+	<form ng-submit="addNewPost()">
+		<input type="text" ng-model="newPost.title" />
+		<input type="submit" value="新增" />
+	</form>
+	<ul>
+		<li ng-repeat="post in posts">
+			{{post.title}}
+			<span ng-show="post.winner" ng-class="{highlight : post == lastWinner}" class="winner">
+				Winner
+			</span>
+		</li>
+	</ul>
+	<button ng-click="drawWinner()">Draw Winner</button>
+</div>
