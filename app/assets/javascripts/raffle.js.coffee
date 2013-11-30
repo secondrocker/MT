@@ -11,6 +11,7 @@ app.factory "Post",($resource) ->
 		$scope.posts.push post 
 		$scope.newPost={}
 		
+		
 	$scope.drawWinner = ->
 		pool = []
 		angular.forEach $scope.posts , (post)->
